@@ -1,6 +1,6 @@
-# demo-project
+# lipid-nanoparticle-screening
 
-A brief description of the project. Explain what it does and who it's for.
+Ionizable lipid and lipid nanoparticle screening for efficient nucleic acid delivery
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
