@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d1117 0%, #1a1f2b 100%);
+  color: #ffffff;
+  /* default text color */
+  align-items: center;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+
+.under {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #00D4FF;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 400;
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #a36fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0.5rem;
+}
+
+.heading-top {
+  font-size: 4.5rem;
+}
+
+.heading-bottom {
+  font-size: 4rem;
+}
+
+.button {
+  display: inline-block;
+  /* only as wide as content */
+  margin: 4rem auto 1rem auto;
+  /* auto centers in a block container */
+  padding: 25px 30px;
+  font-size: 1.125rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  transform: scale(1.05);
+  /* small zoom on hover */
+}
+
+button:active {
+  transform: scale(0.98);
+  /* slight press-down effect */
+}
+
+.instructions {
+  margin: 3rem auto 1rem auto;
+  color: #6B7280;
+}
+
+
+
+h4 {
+  margin: 0.5rem auto 2rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 330;
+  max-width: 45vw;
+  color: lightsteelblue;
+}
+
+img {
+  width: 90%;
+  height: 90%;
+}
+
+.pulse-circle {
+  margin: 0.8rem auto;
+  width: 85px;
+  /* same as w-20 in Tailwind */
+  height: 85px;
+  /* same as h-20 */
+  border-radius: 50%;
+  /* makes it round */
+  background: linear-gradient(135deg, cyan, royalblue);
+  display: flex;
+  /* center icon inside */
+  align-items: center;
+  justify-content: center;
+}
+
+.pulse-animation {
+  animation: pulse-grow 1.5s infinite;
+}
+
+@keyframes pulse-grow {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.pulse-circle svg {
+  width: 45px;
+  /* icon size */
+  height: 45px;
+  stroke: white;
+  /* icon color */
+}
+
+.pulse-circle span {
+  font-size: 44px;
+  /* adjust until it looks good */
+}

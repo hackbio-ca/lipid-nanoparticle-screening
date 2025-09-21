@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d1117 0%, #1a1f2b 100%);
+  color: #ffffff;
+  /* default text color */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+.scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.calculator {
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+
+#SMILE {
+  border-radius: 20px;
+  font-size: 2rem;
+  border-radius: 3rem;
+  margin-right: 20px;
+  max-width: 10ch;
+  padding: 5px 20px;
+  display: inline-block;
+}
+
+a {
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 400;
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #a36fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 10rem auto 1rem auto;
+}
+
+.heading-top {
+  font-size: 4.5rem;
+}
+
+.heading-bottom {
+  font-size: 4rem;
+}
+
+.number {
+  font-size: 5rem;
+  margin: 0 auto;
+}
+
+button {
+  /* only as wide as content */
+  margin: 5rem auto 2rem auto;
+  /* auto centers in a block container */
+  padding: 10px 40px;
+  font-size: 1.125rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: white;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: scale(1.05);
+  /* small zoom on hover */
+}
+
+button:active {
+  transform: scale(0.98);
+  /* slight press-down effect */
+}
