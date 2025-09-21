@@ -47,7 +47,7 @@ The environment must have all the necessary dependencies. In our case, rd-kit wa
 
 ## Quick Start
 
-import master_doc.py
+import master_functions.py
 
 run_knn_analysis(filepath: str) # to run the K-nearest-neighbors analysis
 
